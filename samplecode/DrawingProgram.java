@@ -1,5 +1,7 @@
+import javax.swing.*;
 public class DrawingProgram {
   public static void main(String[] args){
+    JFrame.setDefaultLookAndFeelDecorated(true);
     Model model = new Model();
     UndoManager undoManager = new UndoManager();
     UndoManager.setModel(model);
